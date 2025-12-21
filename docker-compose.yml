@@ -1,0 +1,56 @@
+
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: gestion-stock-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: gestionstock
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_USER: stockuser
+      MYSQL_PASSWORD: stockpassword
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+    networks:
+      - gestion-stock-network
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: gestion-stock-app
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/gestionstock?allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_DATASOURCE_USERNAME: stockuser
+      SPRING_DATASOURCE_PASSWORD: stockpassword
+      SPRING_LIQUIBASE_URL: jdbc:mysql://mysql:3306/gestionstock?allowPublicKeyRetrieval=true&useSSL=false
+      SPRING_LIQUIBASE_USER: stockuser
+      SPRING_LIQUIBASE_PASSWORD: stockpassword
+      JWT_SECRET: mySecretKeyForJWTTokenGenerationThatIsAtLeast256BitsLongForHS256AlgorithmSecureKey2024
+      JWT_EXPIRATION: 86400000
+      JWT_REFRESH_EXPIRATION: 604800000
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - gestion-stock-network
+
+volumes:
+  mysql-data:
+    driver: local
+
+networks:
+  gestion-stock-network:
+    driver: bridge

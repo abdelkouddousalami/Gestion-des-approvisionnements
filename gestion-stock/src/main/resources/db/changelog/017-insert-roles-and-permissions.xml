@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.20.xsd">
+
+    <changeSet id="017-insert-roles-and-permissions" author="security">
+        
+        <!-- Insert Roles -->
+        <insert tableName="roles">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="ADMIN"/>
+            <column name="description" value="Administrator with full system access"/>
+        </insert>
+
+        <insert tableName="roles">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="RESPONSABLE_ACHATS"/>
+            <column name="description" value="Purchasing manager"/>
+        </insert>
+
+        <insert tableName="roles">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="MAGASINIER"/>
+            <column name="description" value="Warehouse keeper"/>
+        </insert>
+
+        <insert tableName="roles">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="CHEF_ATELIER"/>
+            <column name="description" value="Workshop supervisor"/>
+        </insert>
+
+        <!-- Insert Permissions -->
+        
+        <!-- User Management Permissions -->
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="1"/>
+            <column name="name" value="VIEW_USERS"/>
+            <column name="description" value="View users"/>
+            <column name="category" value="USER_MANAGEMENT"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="2"/>
+            <column name="name" value="MANAGE_USERS"/>
+            <column name="description" value="Manage users (enable/disable)"/>
+            <column name="category" value="USER_MANAGEMENT"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="3"/>
+            <column name="name" value="MANAGE_ROLES"/>
+            <column name="description" value="Assign and remove roles"/>
+            <column name="category" value="USER_MANAGEMENT"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="4"/>
+            <column name="name" value="MANAGE_PERMISSIONS"/>
+            <column name="description" value="Manage custom user permissions"/>
+            <column name="category" value="USER_MANAGEMENT"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="5"/>
+            <column name="name" value="VIEW_ROLES"/>
+            <column name="description" value="View roles"/>
+            <column name="category" value="USER_MANAGEMENT"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="6"/>
+            <column name="name" value="VIEW_PERMISSIONS"/>
+            <column name="description" value="View permissions"/>
+            <column name="category" value="USER_MANAGEMENT"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="7"/>
+            <column name="name" value="VIEW_AUDIT_LOGS"/>
+            <column name="description" value="View audit logs"/>
+            <column name="category" value="USER_MANAGEMENT"/>
+        </insert>
+
+        <!-- Fournisseur Permissions -->
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="10"/>
+            <column name="name" value="VIEW_FOURNISSEUR"/>
+            <column name="description" value="View suppliers"/>
+            <column name="category" value="FOURNISSEUR"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="11"/>
+            <column name="name" value="CREATE_FOURNISSEUR"/>
+            <column name="description" value="Create suppliers"/>
+            <column name="category" value="FOURNISSEUR"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="12"/>
+            <column name="name" value="UPDATE_FOURNISSEUR"/>
+            <column name="description" value="Update suppliers"/>
+            <column name="category" value="FOURNISSEUR"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="13"/>
+            <column name="name" value="DELETE_FOURNISSEUR"/>
+            <column name="description" value="Delete suppliers"/>
+            <column name="category" value="FOURNISSEUR"/>
+        </insert>
+
+        <!-- Produit Permissions -->
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="20"/>
+            <column name="name" value="VIEW_PRODUIT"/>
+            <column name="description" value="View products"/>
+            <column name="category" value="PRODUIT"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="21"/>
+            <column name="name" value="CREATE_PRODUIT"/>
+            <column name="description" value="Create products"/>
+            <column name="category" value="PRODUIT"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="22"/>
+            <column name="name" value="UPDATE_PRODUIT"/>
+            <column name="description" value="Update products"/>
+            <column name="category" value="PRODUIT"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="23"/>
+            <column name="name" value="DELETE_PRODUIT"/>
+            <column name="description" value="Delete products"/>
+            <column name="category" value="PRODUIT"/>
+        </insert>
+
+        <!-- Commande Permissions -->
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="30"/>
+            <column name="name" value="VIEW_COMMANDE"/>
+            <column name="description" value="View orders"/>
+            <column name="category" value="COMMANDE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="31"/>
+            <column name="name" value="CREATE_COMMANDE"/>
+            <column name="description" value="Create orders"/>
+            <column name="category" value="COMMANDE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="32"/>
+            <column name="name" value="UPDATE_COMMANDE"/>
+            <column name="description" value="Update orders"/>
+            <column name="category" value="COMMANDE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="33"/>
+            <column name="name" value="DELETE_COMMANDE"/>
+            <column name="description" value="Delete orders"/>
+            <column name="category" value="COMMANDE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="34"/>
+            <column name="name" value="VALIDATE_COMMANDE"/>
+            <column name="description" value="Validate orders"/>
+            <column name="category" value="COMMANDE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="35"/>
+            <column name="name" value="CANCEL_COMMANDE"/>
+            <column name="description" value="Cancel orders"/>
+            <column name="category" value="COMMANDE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="36"/>
+            <column name="name" value="RECEIVE_COMMANDE"/>
+            <column name="description" value="Receive orders"/>
+            <column name="category" value="COMMANDE"/>
+        </insert>
+
+        <!-- Stock Permissions -->
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="40"/>
+            <column name="name" value="VIEW_STOCK"/>
+            <column name="description" value="View stock"/>
+            <column name="category" value="STOCK"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="41"/>
+            <column name="name" value="VIEW_MOUVEMENT_STOCK"/>
+            <column name="description" value="View stock movements"/>
+            <column name="category" value="STOCK"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="42"/>
+            <column name="name" value="VIEW_ALERTE_STOCK"/>
+            <column name="description" value="View stock alerts"/>
+            <column name="category" value="STOCK"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="43"/>
+            <column name="name" value="VIEW_VALORISATION_STOCK"/>
+            <column name="description" value="View stock valuation"/>
+            <column name="category" value="STOCK"/>
+        </insert>
+
+        <!-- Bon Sortie Permissions -->
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="50"/>
+            <column name="name" value="VIEW_BON_SORTIE"/>
+            <column name="description" value="View delivery notes"/>
+            <column name="category" value="BON_SORTIE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="51"/>
+            <column name="name" value="CREATE_BON_SORTIE"/>
+            <column name="description" value="Create delivery notes"/>
+            <column name="category" value="BON_SORTIE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="52"/>
+            <column name="name" value="UPDATE_BON_SORTIE"/>
+            <column name="description" value="Update delivery notes"/>
+            <column name="category" value="BON_SORTIE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="53"/>
+            <column name="name" value="VALIDATE_BON_SORTIE"/>
+            <column name="description" value="Validate delivery notes"/>
+            <column name="category" value="BON_SORTIE"/>
+        </insert>
+
+        <insert tableName="permissions">
+            <column name="id" valueNumeric="54"/>
+            <column name="name" value="CANCEL_BON_SORTIE"/>
+            <column name="description" value="Cancel delivery notes"/>
+            <column name="category" value="BON_SORTIE"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f0aab8c4-5dfe-4656-9a8f-f351bfd01ea0" name="Changes" comment="fix: fix some issues in test senarios">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Exception" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Abd Elkouddous El Alami &lt;151691642+abdelkouddousalami@users.noreply.github.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;adilaitelhoucine1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/adilaitelhoucine1/Gestion-d-approvisionnement.git&quot;,
+    &quot;accountId&quot;: &quot;fd0dcd68-6ed9-47e2-a00d-7074a154d7e1&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/6.2.12/spring-beans-6.2.12.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.class" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="34gvA4EtLbCa3UWStRcnJkAAATB" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Unnamed.executor": "Run",
+    "JUnit.CommandeFournisseurServiceTest.testReceptionCreeLotAutomatiquement.executor": "Run",
+    "JUnit.GestionStockApplicationTests.executor": "Run",
+    "Maven.gestion-stock [clean,install,-DskipTests].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Notification.DisplayName-DoNotAsk-DatabaseConfigFileWatcher.found": "New/updated database configurations found",
+    "Notification.DoNotAsk-DatabaseConfigFileWatcher.found": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.GestionStockApplication.executor": "Run",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "spring-security-3",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/abdelkouddous/tools",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean install -DskipTests" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GestionStockApplication">
+    <configuration name="CommandeFournisseurServiceTest.testReceptionCreeLotAutomatiquement" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gestion-stock" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tricol.gestionstock.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tricol.gestionstock.service" />
+      <option name="MAIN_CLASS_NAME" value="com.tricol.gestionstock.service.CommandeFournisseurServiceTest" />
+      <option name="METHOD_NAME" value="testReceptionCreeLotAutomatiquement" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestionStockApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gestion-stock" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tricol.gestionstock.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tricol.gestionstock" />
+      <option name="MAIN_CLASS_NAME" value="com.tricol.gestionstock.GestionStockApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GestionStockApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="gestion-stock" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.tricol.gestionstock.GestionStockApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CommandeFournisseurServiceTest.testReceptionCreeLotAutomatiquement" />
+        <item itemvalue="JUnit.GestionStockApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.30387.90" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.30387.90" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f0aab8c4-5dfe-4656-9a8f-f351bfd01ea0" name="Changes" comment="" />
+      <created>1761647883186</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761647883186</updated>
+      <workItem from="1761647884929" duration="5155000" />
+      <workItem from="1761749394608" duration="1736000" />
+      <workItem from="1761815166643" duration="2764000" />
+      <workItem from="1761819671625" duration="207000" />
+      <workItem from="1761819906123" duration="6153000" />
+      <workItem from="1761853035314" duration="6050000" />
+      <workItem from="1761897823552" duration="20327000" />
+      <workItem from="1762076547849" duration="7861000" />
+      <workItem from="1762087280847" duration="228000" />
+      <workItem from="1762087540545" duration="5638000" />
+      <workItem from="1762160904758" duration="870000" />
+      <workItem from="1762161821847" duration="261000" />
+      <workItem from="1762162100217" duration="3116000" />
+      <workItem from="1762166439111" duration="79000" />
+      <workItem from="1762166536350" duration="822000" />
+      <workItem from="1762167389123" duration="25000" />
+      <workItem from="1762791351243" duration="81000" />
+      <workItem from="1762849144686" duration="11499000" />
+      <workItem from="1762938059470" duration="21662000" />
+      <workItem from="1762978307628" duration="846000" />
+      <workItem from="1762979183576" duration="346000" />
+      <workItem from="1762979541278" duration="2876000" />
+      <workItem from="1762982433462" duration="3439000" />
+      <workItem from="1763020958950" duration="8152000" />
+      <workItem from="1763050405157" duration="2236000" />
+      <workItem from="1763063710090" duration="3267000" />
+      <workItem from="1763107409600" duration="9651000" />
+      <workItem from="1763128505322" duration="6468000" />
+      <workItem from="1763226223530" duration="9550000" />
+      <workItem from="1763285693284" duration="4748000" />
+      <workItem from="1763292966668" duration="14085000" />
+      <workItem from="1763312702647" duration="4000" />
+      <workItem from="1763367106236" duration="2610000" />
+      <workItem from="1763548792854" duration="1423000" />
+      <workItem from="1763634480485" duration="609000" />
+      <workItem from="1763635113991" duration="715000" />
+      <workItem from="1763636286756" duration="359000" />
+      <workItem from="1763718256779" duration="11303000" />
+      <workItem from="1763732414471" duration="1970000" />
+      <workItem from="1767433678765" duration="6997000" />
+      <workItem from="1767504296634" duration="91000" />
+      <workItem from="1767610492526" duration="6252000" />
+      <workItem from="1767677318165" duration="659000" />
+      <workItem from="1769491581004" duration="19000" />
+      <workItem from="1769577852631" duration="752000" />
+      <workItem from="1769625557236" duration="33000" />
+    </task>
+    <task id="LOCAL-00001" summary="Feat : initialize the Entities &amp; Lombok dependencies">
+      <option name="closed" value="true" />
+      <created>1761821610314</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761821610314</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: add new DTOs and services for stock management, including filtering capabilities">
+      <option name="closed" value="true" />
+      <created>1763134107047</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1763134107047</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test: add unit tests for stock management services including FIFO valuation and command reception">
+      <option name="closed" value="true" />
+      <created>1763228098267</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1763228098267</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat: implement advanced search functionality for MouvementStock with pagination support">
+      <option name="closed" value="true" />
+      <created>1763237401537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1763237401537</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix: fix some issues in test senarios">
+      <option name="closed" value="true" />
+      <created>1763311879002</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1763311879002</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/adil" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="*" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/adil" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="user">
+                    <value>
+                      <list>
+                        <option value="*" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Feat : initialize the Entities &amp; Lombok dependencies" />
+    <MESSAGE value="Merge pull request #7 from adilaitelhoucine1/dev&#10;&#10;Dev" />
+    <MESSAGE value="Fix Some issues" />
+    <MESSAGE value="feat: add new DTOs and services for stock management, including filtering capabilities" />
+    <MESSAGE value="test: add unit tests for stock management services including FIFO valuation and command reception" />
+    <MESSAGE value="feat: implement advanced search functionality for MouvementStock with pagination support" />
+    <MESSAGE value="fix: fix some issues in test senarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: fix some issues in test senarios" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

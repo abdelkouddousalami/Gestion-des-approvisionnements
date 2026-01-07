@@ -131,11 +131,14 @@
         <!-- SWAGGER / OPENAPI                         -->
         <!-- ========================================= -->
 
+        <!-- DISABLED: SpringDoc 2.2.0 requires Spring Boot 3.x -->
+        <!--
         <dependency>
             <groupId>org.springdoc</groupId>
             <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
             <version>2.2.0</version>
         </dependency>
+        -->
 
         <!-- ========================================= -->
         <!-- DEVELOPMENT TOOLS                         -->

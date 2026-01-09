@@ -31,4 +31,7 @@ public class RegisterRequest {
 
     @NotBlank(message = "Last name is required")
     private String lastName;
+
+    // Optional role name for registration (defaults to USER if not provided)
+    private String roleName;
 }

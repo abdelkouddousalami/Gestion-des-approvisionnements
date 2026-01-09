@@ -53,6 +53,15 @@ public class AuthService {
                 .credentialsNonExpired(true)
                 .build();
 
+        // Assign role based on request or default to USER
+        String roleName = (request.getRoleName() != null && !request.getRoleName().isEmpty()) 
+            ? request.getRoleName() 
+            : "USER";
+        roleRepository.findByName(roleName).ifPresentOrElse(
+            role -> user.getRoles().add(role),
+            () -> roleRepository.findByName("USER").ifPresent(role -> user.getRoles().add(role))
+        );
+
         userRepository.save(user);
 
         // Log registration
@@ -69,11 +78,11 @@ public class AuthService {
                 .userId(user.getId())
                 .username(user.getUsername())
                 .email(user.getEmail())
-                .roles(user.getRoles().stream().map(RoleApp::getName).collect(Collectors.toSet()))
-                .permissions(user.getAuthorities().stream()
+                .roles(user.getRoles() != null ? user.getRoles().stream().map(RoleApp::getName).collect(Collectors.toSet()) : java.util.Collections.emptySet())
+                .permissions(user.getAuthorities() != null ? user.getAuthorities().stream()
                         .map(GrantedAuthority::getAuthority)
                         .filter(auth -> !auth.startsWith("ROLE_"))
-                        .collect(Collectors.toSet()))
+                        .collect(Collectors.toSet()) : java.util.Collections.emptySet())
                 .build();
     }
 

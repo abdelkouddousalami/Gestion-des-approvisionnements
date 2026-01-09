@@ -2,6 +2,7 @@ package com.tricol.gestionstock.controller;
 
 import com.tricol.gestionstock.dto.auth.*;
 import com.tricol.gestionstock.service.AuthService;
+import com.tricol.gestionstock.service.UserManagementService;
 import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -10,12 +11,15 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/api/auth")
 @RequiredArgsConstructor
 public class AuthController {
 
     private final AuthService authService;
+    private final UserManagementService userManagementService;
 
     @PostMapping("/register")
     public ResponseEntity<AuthResponse> register(@Valid @RequestBody RegisterRequest request) {
@@ -52,5 +56,11 @@ public class AuthController {
             return ResponseEntity.ok("Current user: " + authentication.getName());
         }
         return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Not authenticated");
+    }
+
+    @GetMapping("/roles")
+    public ResponseEntity<List<RoleResponse>> getAvailableRoles() {
+        // Public endpoint to get available roles for registration
+        return ResponseEntity.ok(userManagementService.getAllRoles());
     }
 }

@@ -3,7 +3,6 @@ package com.tricol.gestionstock.controller;
 import com.tricol.gestionstock.dto.fournisseur.FournisseurRequestDTO;
 import com.tricol.gestionstock.dto.fournisseur.FournisseurResponseDTO;
 import com.tricol.gestionstock.service.FournisseurService;
-import io.swagger.v3.oas.annotations.tags.Tag;
 import javax.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;

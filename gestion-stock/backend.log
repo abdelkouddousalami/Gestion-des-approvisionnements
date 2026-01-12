@@ -1,0 +1,59 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ----------------------< com.tricol:gestion-stock >----------------------
+[INFO] Building gestion-stock 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ war ]---------------------------------
+[INFO] 
+[INFO] >>> spring-boot:2.7.18:run (default-cli) > test-compile @ gestion-stock >>>
+[INFO] 
+[INFO] --- jacoco:0.8.11:prepare-agent (default) @ gestion-stock ---
+[INFO] argLine set to -javaagent:/home/abdelkouddous/.m2/repository/org/jacoco/org.jacoco.agent/0.8.11/org.jacoco.agent-0.8.11-runtime.jar=destfile=/home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.2.0:resources (default-resources) @ gestion-stock ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Using 'UTF-8' encoding to copy filtered properties files.
+[INFO] Copying 1 resource
+[INFO] Copying 20 resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ gestion-stock ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 101 source files with javac [debug target 11] to target/classes
+[INFO] -------------------------------------------------------------
+[WARNING] COMPILATION WARNING : 
+[INFO] -------------------------------------------------------------
+[WARNING] /home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/src/main/java/com/tricol/gestionstock/entity/Permission.java:[32,26] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/src/main/java/com/tricol/gestionstock/entity/Permission.java:[35,33] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/src/main/java/com/tricol/gestionstock/dto/auth/AuthResponse.java:[18,20] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/src/main/java/com/tricol/gestionstock/entity/RoleApp.java:[29,26] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/src/main/java/com/tricol/gestionstock/entity/RoleApp.java:[37,29] @Builder will ignore the initializing expression entirely. If you want the initializing expression to serve as default, add @Builder.Default. If it is not supposed to be settable during building, make the field final.
+[WARNING] /home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/src/main/java/com/tricol/gestionstock/mapper/ProduitMapper.java:[18,13] Unmapped target properties: "lignesCommande, lots, mouvements".
+[WARNING] /home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/src/main/java/com/tricol/gestionstock/mapper/ProduitMapper.java:[28,10] Unmapped target properties: "stockActuel, lignesCommande, lots, mouvements".
+[INFO] 7 warnings 
+[INFO] -------------------------------------------------------------
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/src/main/java/com/tricol/gestionstock/service/impl/CommandeFournisseurServiceImpl.java:[287,78] cannot find symbol
+  symbol:   variable Collectors
+  location: class com.tricol.gestionstock.service.impl.CommandeFournisseurServiceImpl
+[INFO] 1 error
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.971 s
+[INFO] Finished at: 2026-01-05T12:10:46+01:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.11.0:compile (default-compile) on project gestion-stock: Compilation failure
+[ERROR] /home/abdelkouddous/Youcode/Gestion-des-approvisionnements/gestion-stock/src/main/java/com/tricol/gestionstock/service/impl/CommandeFournisseurServiceImpl.java:[287,78] cannot find symbol
+[ERROR]   symbol:   variable Collectors
+[ERROR]   location: class com.tricol.gestionstock.service.impl.CommandeFournisseurServiceImpl
+[ERROR] 
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

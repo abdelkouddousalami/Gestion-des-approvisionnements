@@ -1,0 +1,2506 @@
+
+> tricol-frontend@0.0.0 start
+> ng serve
+
+❯ Building...
+✔ Building...
+Application bundle generation failed. [1.207 seconds] - 2026-01-05T11:10:55.534Z
+
+✘ [ERROR] Could not resolve "../../../core/services/auth.service"
+
+    src/app/features/dashboard/dashboard.component.ts:3:28:
+      3 │ import { AuthService } from '../../../core/services/auth.service';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module '../../../core/services/auth.service' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:3:28:
+      3 │ import { AuthService } from '../../../core/services/auth.service';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "../../../core/services/api.service"
+
+    src/app/features/dashboard/dashboard.component.ts:4:45:
+      4 │ ...tService, StockService } from '../../../core/services/api.service';
+        ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module '../../../core/services/api.service' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:4:45:
+      4 │ ...tService, StockService } from '../../../core/services/api.service';
+        ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module '../../../core/models/auth.model' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:5:21:
+      5 │ import { User } from '../../../core/models/auth.model';
+        ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2571: Object is of type 'unknown'. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:56:16:
+      56 │     this.user = this.authService.getCurrentUser();
+         ╵                 ~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2571: Object is of type 'unknown'. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:61:4:
+      61 │     this.produitService.getStockCritique().subscribe({
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'produits' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:62:13:
+      62 │       next: (produits) => this.stats.stockCritique = produits.length
+         ╵              ~~~~~~~~
+
+
+✘ [ERROR] TS2571: Object is of type 'unknown'. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:65:4:
+      65 │     this.stockService.getValorisation().subscribe({
+         ╵     ~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'data' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:66:13:
+      66 │       next: (data) => this.stats.valorisationStock = data.total
+         ╵              ~~~~
+
+
+✘ [ERROR] TS2305: Module '"./app/app"' has no exported member 'App'. [plugin angular-compiler]
+
+    src/main.ts:3:9:
+      3 │ import { App } from './app/app';
+        ╵          ~~~
+
+
+Watch mode enabled. Watching for file changes...
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.207 seconds] - 2026-01-05T11:16:12.762Z
+
+✘ [ERROR] Could not resolve "../../../core/services/auth.service"
+
+    src/app/features/dashboard/dashboard.component.ts:3:28:
+      3 │ import { AuthService } from '../../../core/services/auth.service';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module '../../../core/services/auth.service' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:3:28:
+      3 │ import { AuthService } from '../../../core/services/auth.service';
+        ╵                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "../../../core/services/api.service"
+
+    src/app/features/dashboard/dashboard.component.ts:4:45:
+      4 │ ...tService, StockService } from '../../../core/services/api.service';
+        ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module '../../../core/services/api.service' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:4:45:
+      4 │ ...tService, StockService } from '../../../core/services/api.service';
+        ╵                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module '../../../core/models/auth.model' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:5:21:
+      5 │ import { User } from '../../../core/models/auth.model';
+        ╵                      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2571: Object is of type 'unknown'. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:56:16:
+      56 │     this.user = this.authService.getCurrentUser();
+         ╵                 ~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2571: Object is of type 'unknown'. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:61:4:
+      61 │     this.produitService.getStockCritique().subscribe({
+         ╵     ~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'produits' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:62:13:
+      62 │       next: (produits) => this.stats.stockCritique = produits.length
+         ╵              ~~~~~~~~
+
+
+✘ [ERROR] TS2571: Object is of type 'unknown'. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:65:4:
+      65 │     this.stockService.getValorisation().subscribe({
+         ╵     ~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS7006: Parameter 'data' implicitly has an 'any' type. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:66:13:
+      66 │       next: (data) => this.stats.valorisationStock = data.total
+         ╵              ~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names                       |  Raw size
+main.js             | main                        |  15.15 kB | 
+chunk-ZLSRV5EX.js   | -                           |   2.89 kB | 
+styles.css          | styles                      | 801 bytes | 
+chunk-ZDJ3GTZ7.js   | -                           | 187 bytes | 
+polyfills.js        | polyfills                   |  95 bytes | 
+
+                    | Initial total               |  19.13 kB
+
+Lazy chunk files    | Names                       |  Raw size
+chunk-IK2EMBIL.js   | produits-list-component     |  16.07 kB | 
+chunk-JYWLRNPA.js   | fournisseurs-list-component |  15.32 kB | 
+chunk-NGNFITJ4.js   | fournisseur-form-component  |  12.74 kB | 
+chunk-W4LO36LC.js   | produit-form-component      |  12.68 kB | 
+chunk-HEW5ET2T.js   | login-component             |  11.06 kB | 
+chunk-2F7AOCNC.js   | register-component          |  10.83 kB | 
+chunk-26KQU33Q.js   | dashboard-component         |   8.08 kB | 
+chunk-ZVVRAVV5.js   | -                           |   5.66 kB | 
+chunk-SQPDAG7L.js   | forbidden-component         |   3.76 kB | 
+chunk-OECHO2BG.js   | not-found-component         |   3.75 kB | 
+
+Application bundle generation complete. [0.616 seconds] - 2026-01-05T11:39:53.862Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.132 seconds] - 2026-01-05T11:50:33.429Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names              | Raw size
+main.js             | main               | 15.15 kB | 
+
+Lazy chunk files    | Names              | Raw size
+chunk-7275VH2E.js   | register-component | 11.65 kB | 
+
+Application bundle generation complete. [0.164 seconds] - 2026-01-05T12:02:53.904Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names          | Raw size
+main.js             | main           | 15.19 kB | 
+
+Lazy chunk files    | Names          | Raw size
+chunk-2TYPHLYS.js   | home-component | 18.47 kB | 
+
+Application bundle generation complete. [0.173 seconds] - 2026-01-05T12:03:27.141Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names                       | Raw size
+main.js             | main                        | 15.19 kB | 
+chunk-VIRJ3VKV.js   | -                           |  3.02 kB | 
+
+Lazy chunk files    | Names                       | Raw size
+chunk-KEVIOFRO.js   | produits-list-component     | 16.07 kB | 
+chunk-HIGXA5M2.js   | fournisseurs-list-component | 15.32 kB | 
+chunk-K2E7QUOR.js   | register-component          | 11.65 kB | 
+chunk-B6TYRR5W.js   | login-component             | 11.06 kB | 
+chunk-HFHYRT2V.js   | dashboard-component         |  8.08 kB | 
+
+Application bundle generation complete. [0.125 seconds] - 2026-01-05T12:08:22.155Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names           | Raw size
+main.js             | main            | 15.19 kB | 
+
+Lazy chunk files    | Names           | Raw size
+chunk-QX5VA5BK.js   | login-component | 11.09 kB | 
+
+Application bundle generation complete. [0.113 seconds] - 2026-01-05T12:08:42.549Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names              | Raw size
+main.js             | main               | 15.19 kB | 
+
+Lazy chunk files    | Names              | Raw size
+chunk-6R3XJOGT.js   | register-component | 11.72 kB | 
+chunk-UEJEMPO4.js   | login-component    | 11.16 kB | 
+
+Application bundle generation complete. [0.222 seconds] - 2026-01-05T12:14:23.908Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.204 seconds] - 2026-01-05T12:26:33.656Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names              | Raw size
+main.js             | main               | 15.19 kB | 
+
+Lazy chunk files    | Names              | Raw size
+chunk-E6OBUKB3.js   | register-component | 11.68 kB | 
+
+Application bundle generation complete. [0.108 seconds] - 2026-01-05T12:38:32.363Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.069 seconds] - 2026-01-05T12:40:11.743Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.291 seconds] - 2026-01-05T12:45:13.137Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.000 seconds] - 2026-01-05T12:47:09.168Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.030 seconds] - 2026-01-05T12:50:49.046Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names                       |  Raw size
+main.js             | main                        |  15.40 kB | 
+styles.css          | styles                      |   3.29 kB | 
+chunk-VIRJ3VKV.js   | -                           |   3.02 kB | 
+chunk-ZDJ3GTZ7.js   | -                           | 187 bytes | 
+polyfills.js        | polyfills                   |  95 bytes | 
+
+                    | Initial total               |  21.99 kB
+
+Lazy chunk files    | Names                       |  Raw size
+chunk-3DRMLWU7.js   | home-component              |  67.86 kB | 
+chunk-HT3GGEM4.js   | contact-component           |  59.44 kB | 
+chunk-F5PMGXP5.js   | about-component             |  52.59 kB | 
+chunk-JQAVBITI.js   | -                           |  51.70 kB | 
+chunk-PRZJG3RB.js   | produits-list-component     |  16.07 kB | 
+chunk-TFTKDNQ6.js   | fournisseurs-list-component |  15.32 kB | 
+chunk-NGNFITJ4.js   | fournisseur-form-component  |  12.74 kB | 
+chunk-W4LO36LC.js   | produit-form-component      |  12.68 kB | 
+chunk-E6OBUKB3.js   | register-component          |  11.68 kB | 
+chunk-UEJEMPO4.js   | login-component             |  11.16 kB | 
+chunk-ZHGDPGWQ.js   | dashboard-component         |   8.08 kB | 
+chunk-ZVVRAVV5.js   | -                           |   5.66 kB | 
+chunk-SQPDAG7L.js   | forbidden-component         |   3.76 kB | 
+chunk-OECHO2BG.js   | not-found-component         |   3.75 kB | 
+
+Application bundle generation complete. [0.442 seconds] - 2026-01-05T12:51:10.772Z
+
+▲ [WARNING] NG8113: RouterLink is not used within the template of ContactComponent [plugin angular-compiler]
+
+    src/app/features/contact/contact.component.ts:11:26:
+      11 │   imports: [CommonModule, RouterLink, ReactiveFormsModule, PublicN...
+         ╵                           ~~~~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names           | Raw size
+main.js             | main            | 15.40 kB | 
+
+Lazy chunk files    | Names           | Raw size
+chunk-K2NZDFRJ.js   | login-component | 29.34 kB | 
+
+Application bundle generation complete. [0.189 seconds] - 2026-01-05T12:52:05.779Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:55:60:
+      55 │ ..."loginForm.get('username')?.invalid && loginForm.get('username'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:55:98:
+      55 │ ...rm.get('username')?.invalid && loginForm.get('username')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:58:46:
+      58 │ ...(loginForm.get('username')?.invalid && loginForm.get('username'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:58:84:
+      58 │ ....get('username')?.invalid && loginForm.get('username')?.touched) {
+         ╵                                                            ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:75:60:
+      75 │ ..."loginForm.get('password')?.invalid && loginForm.get('password'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:75:98:
+      75 │ ...rm.get('password')?.invalid && loginForm.get('password')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:78:46:
+      78 │ ...(loginForm.get('password')?.invalid && loginForm.get('password'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:78:84:
+      78 │ ....get('password')?.invalid && loginForm.get('password')?.touched) {
+         ╵                                                            ~~~~~~~
+
+
+▲ [WARNING] NG8113: RouterLink is not used within the template of ContactComponent [plugin angular-compiler]
+
+    src/app/features/contact/contact.component.ts:11:26:
+      11 │   imports: [CommonModule, RouterLink, ReactiveFormsModule, PublicN...
+         ╵                           ~~~~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names              | Raw size
+main.js             | main               | 15.40 kB | 
+
+Lazy chunk files    | Names              | Raw size
+chunk-7ODC76K6.js   | register-component | 37.34 kB | 
+
+Application bundle generation complete. [0.147 seconds] - 2026-01-05T12:54:03.760Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:55:60:
+      55 │ ..."loginForm.get('username')?.invalid && loginForm.get('username'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:55:98:
+      55 │ ...rm.get('username')?.invalid && loginForm.get('username')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:58:46:
+      58 │ ...(loginForm.get('username')?.invalid && loginForm.get('username'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:58:84:
+      58 │ ....get('username')?.invalid && loginForm.get('username')?.touched) {
+         ╵                                                            ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:75:60:
+      75 │ ..."loginForm.get('password')?.invalid && loginForm.get('password'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:75:98:
+      75 │ ...rm.get('password')?.invalid && loginForm.get('password')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:78:46:
+      78 │ ...(loginForm.get('password')?.invalid && loginForm.get('password'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:78:84:
+      78 │ ....get('password')?.invalid && loginForm.get('password')?.touched) {
+         ╵                                                            ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:57:63:
+      57 │ ...registerForm.get('prenom')?.invalid && registerForm.get('prenom...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:57:102:
+      57 │ ...orm.get('prenom')?.invalid && registerForm.get('prenom')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:74:60:
+      74 │ ...]="registerForm.get('nom')?.invalid && registerForm.get('nom')?...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:74:96:
+      74 │ ...isterForm.get('nom')?.invalid && registerForm.get('nom')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:92:63:
+      92 │ ...gisterForm.get('username')?.invalid && registerForm.get('userna...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:92:104:
+      92 │ ...get('username')?.invalid && registerForm.get('username')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:109:60:
+      109 │ ..."registerForm.get('email')?.invalid && registerForm.get('email...
+          ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:109:98:
+      109 │ ...Form.get('email')?.invalid && registerForm.get('email')?.touched"
+          ╵                                                             ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be safely removed. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:112:19:
+      112 │ ...     @if (registerForm.get('email')?.errors?.['email'] && regi...
+          ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:112:46:
+      112 │ ...(registerForm.get('email')?.errors?.['email'] && registerForm....
+          ╵                                ~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:112:94:
+      112 │ ...ail')?.errors?.['email'] && registerForm.get('email')?.touched) {
+          ╵                                                           ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:129:63:
+      129 │ ...gisterForm.get('password')?.invalid && registerForm.get('passw...
+          ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:129:104:
+      129 │ ...et('password')?.invalid && registerForm.get('password')?.touched"
+          ╵                                                             ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be safely removed. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:132:19:
+      132 │ ...     @if (registerForm.get('password')?.errors?.['minlength'] ...
+          ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:132:49:
+      132 │ ...gisterForm.get('password')?.errors?.['minlength'] && registerF...
+          ╵                                ~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:132:104:
+      132 │ ...errors?.['minlength'] && registerForm.get('password')?.touched) {
+          ╵                                                           ~~~~~~~
+
+
+▲ [WARNING] NG8113: RouterLink is not used within the template of ContactComponent [plugin angular-compiler]
+
+    src/app/features/contact/contact.component.ts:11:26:
+      11 │   imports: [CommonModule, RouterLink, ReactiveFormsModule, PublicN...
+         ╵                           ~~~~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names             | Raw size
+main.js             | main              | 15.40 kB | 
+
+Lazy chunk files    | Names             | Raw size
+chunk-B4AXXMZR.js   | contact-component | 59.35 kB | 
+
+Application bundle generation complete. [0.167 seconds] - 2026-01-05T13:09:19.353Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:55:60:
+      55 │ ..."loginForm.get('username')?.invalid && loginForm.get('username'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:55:98:
+      55 │ ...rm.get('username')?.invalid && loginForm.get('username')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:58:46:
+      58 │ ...(loginForm.get('username')?.invalid && loginForm.get('username'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:58:84:
+      58 │ ....get('username')?.invalid && loginForm.get('username')?.touched) {
+         ╵                                                            ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:75:60:
+      75 │ ..."loginForm.get('password')?.invalid && loginForm.get('password'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:75:98:
+      75 │ ...rm.get('password')?.invalid && loginForm.get('password')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:78:46:
+      78 │ ...(loginForm.get('password')?.invalid && loginForm.get('password'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:78:84:
+      78 │ ....get('password')?.invalid && loginForm.get('password')?.touched) {
+         ╵                                                            ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:57:63:
+      57 │ ...registerForm.get('prenom')?.invalid && registerForm.get('prenom...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:57:102:
+      57 │ ...orm.get('prenom')?.invalid && registerForm.get('prenom')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:74:60:
+      74 │ ...]="registerForm.get('nom')?.invalid && registerForm.get('nom')?...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:74:96:
+      74 │ ...isterForm.get('nom')?.invalid && registerForm.get('nom')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:92:63:
+      92 │ ...gisterForm.get('username')?.invalid && registerForm.get('userna...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:92:104:
+      92 │ ...get('username')?.invalid && registerForm.get('username')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:109:60:
+      109 │ ..."registerForm.get('email')?.invalid && registerForm.get('email...
+          ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:109:98:
+      109 │ ...Form.get('email')?.invalid && registerForm.get('email')?.touched"
+          ╵                                                             ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be safely removed. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:112:19:
+      112 │ ...     @if (registerForm.get('email')?.errors?.['email'] && regi...
+          ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:112:46:
+      112 │ ...(registerForm.get('email')?.errors?.['email'] && registerForm....
+          ╵                                ~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:112:94:
+      112 │ ...ail')?.errors?.['email'] && registerForm.get('email')?.touched) {
+          ╵                                                           ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:129:63:
+      129 │ ...gisterForm.get('password')?.invalid && registerForm.get('passw...
+          ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:129:104:
+      129 │ ...et('password')?.invalid && registerForm.get('password')?.touched"
+          ╵                                                             ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be safely removed. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:132:19:
+      132 │ ...     @if (registerForm.get('password')?.errors?.['minlength'] ...
+          ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:132:49:
+      132 │ ...gisterForm.get('password')?.errors?.['minlength'] && registerF...
+          ╵                                ~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:132:104:
+      132 │ ...errors?.['minlength'] && registerForm.get('password')?.touched) {
+          ╵                                                           ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.130 seconds] - 2026-01-05T13:16:48.448Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:55:60:
+      55 │ ..."loginForm.get('username')?.invalid && loginForm.get('username'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:55:98:
+      55 │ ...rm.get('username')?.invalid && loginForm.get('username')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:58:46:
+      58 │ ...(loginForm.get('username')?.invalid && loginForm.get('username'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:58:84:
+      58 │ ....get('username')?.invalid && loginForm.get('username')?.touched) {
+         ╵                                                            ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:75:60:
+      75 │ ..."loginForm.get('password')?.invalid && loginForm.get('password'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:75:98:
+      75 │ ...rm.get('password')?.invalid && loginForm.get('password')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:78:46:
+      78 │ ...(loginForm.get('password')?.invalid && loginForm.get('password'...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/login/login.component.ts:78:84:
+      78 │ ....get('password')?.invalid && loginForm.get('password')?.touched) {
+         ╵                                                            ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:57:63:
+      57 │ ...registerForm.get('prenom')?.invalid && registerForm.get('prenom...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:57:102:
+      57 │ ...orm.get('prenom')?.invalid && registerForm.get('prenom')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:74:60:
+      74 │ ...]="registerForm.get('nom')?.invalid && registerForm.get('nom')?...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:74:96:
+      74 │ ...isterForm.get('nom')?.invalid && registerForm.get('nom')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:92:63:
+      92 │ ...gisterForm.get('username')?.invalid && registerForm.get('userna...
+         ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:92:104:
+      92 │ ...get('username')?.invalid && registerForm.get('username')?.touched"
+         ╵                                                              ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:109:60:
+      109 │ ..."registerForm.get('email')?.invalid && registerForm.get('email...
+          ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:109:98:
+      109 │ ...Form.get('email')?.invalid && registerForm.get('email')?.touched"
+          ╵                                                             ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be safely removed. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:112:19:
+      112 │ ...     @if (registerForm.get('email')?.errors?.['email'] && regi...
+          ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:112:46:
+      112 │ ...(registerForm.get('email')?.errors?.['email'] && registerForm....
+          ╵                                ~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:112:94:
+      112 │ ...ail')?.errors?.['email'] && registerForm.get('email')?.touched) {
+          ╵                                                           ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:129:63:
+      129 │ ...gisterForm.get('password')?.invalid && registerForm.get('passw...
+          ╵                                ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:129:104:
+      129 │ ...et('password')?.invalid && registerForm.get('password')?.touched"
+          ╵                                                             ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be safely removed. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:132:19:
+      132 │ ...     @if (registerForm.get('password')?.errors?.['minlength'] ...
+          ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:132:49:
+      132 │ ...gisterForm.get('password')?.errors?.['minlength'] && registerF...
+          ╵                                ~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/auth/register/register.component.ts:132:104:
+      132 │ ...errors?.['minlength'] && registerForm.get('password')?.touched) {
+          ╵                                                           ~~~~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] TS2307: Cannot find module '../../shared/components/public-navbar/public-navbar.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/features/about/about.component.ts:4:38:
+      4 │ ...ent } from '../../shared/components/public-navbar/public-navbar....
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "../../shared/components/public-navbar/public-navbar.component"
+
+    src/app/features/about/about.component.ts:5:38:
+      5 │ ...ent } from '../../shared/components/public-navbar/public-navbar....
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1010: 'imports' must be an array of components, directives, pipes, or NgModules.
+  Value could not be determined statically. [plugin angular-compiler]
+
+    src/app/features/about/about.component.ts:10:38:
+      10 │ ...CommonModule, RouterLink, PublicNavbarComponent, FooterComponent],
+         ╵                              ~~~~~~~~~~~~~~~~~~~~~
+
+  Unknown reference.
+
+    src/app/features/about/about.component.ts:10:38:
+      10 │ ...CommonModule, RouterLink, PublicNavbarComponent, FooterComponent],
+         ╵                              ~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module '../../shared/components/public-navbar/public-navbar.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/features/contact/contact.component.ts:4:38:
+      4 │ ...ent } from '../../shared/components/public-navbar/public-navbar....
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "../../shared/components/public-navbar/public-navbar.component"
+
+    src/app/features/contact/contact.component.ts:5:38:
+      5 │ ...ent } from '../../shared/components/public-navbar/public-navbar....
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1010: 'imports' must be an array of components, directives, pipes, or NgModules.
+  Value could not be determined statically. [plugin angular-compiler]
+
+    src/app/features/contact/contact.component.ts:10:47:
+      10 │ ...ule, ReactiveFormsModule, PublicNavbarComponent, FooterComponent],
+         ╵                              ~~~~~~~~~~~~~~~~~~~~~
+
+  Unknown reference.
+
+    src/app/features/contact/contact.component.ts:10:47:
+      10 │ ...ule, ReactiveFormsModule, PublicNavbarComponent, FooterComponent],
+         ╵                              ~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module '../../shared/components/public-navbar/public-navbar.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/features/home/home.component.ts:4:38:
+      4 │ ...ent } from '../../shared/components/public-navbar/public-navbar....
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "../../shared/components/public-navbar/public-navbar.component"
+
+    src/app/features/home/home.component.ts:5:38:
+      5 │ ...ent } from '../../shared/components/public-navbar/public-navbar....
+        ╵               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] NG1010: 'imports' must be an array of components, directives, pipes, or NgModules.
+  Value could not be determined statically. [plugin angular-compiler]
+
+    src/app/features/home/home.component.ts:10:38:
+      10 │ ...CommonModule, RouterLink, PublicNavbarComponent, FooterComponent],
+         ╵                              ~~~~~~~~~~~~~~~~~~~~~
+
+  Unknown reference.
+
+    src/app/features/home/home.component.ts:10:38:
+      10 │ ...CommonModule, RouterLink, PublicNavbarComponent, FooterComponent],
+         ╵                              ~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.049 seconds] - 2026-01-05T13:33:07.384Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.001 seconds] - 2026-01-05T13:33:24.168Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.001 seconds] - 2026-01-05T13:33:25.380Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.005 seconds] - 2026-01-05T13:33:35.177Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.002 seconds] - 2026-01-05T13:33:36.408Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.001 seconds] - 2026-01-05T13:33:58.138Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.003 seconds] - 2026-01-05T13:34:27.710Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.001 seconds] - 2026-01-05T13:34:28.975Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.001 seconds] - 2026-01-05T13:34:49.073Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.000 seconds] - 2026-01-05T13:34:50.238Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.001 seconds] - 2026-01-05T13:35:06.502Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.003 seconds] - 2026-01-05T13:35:23.195Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.017 seconds] - 2026-01-05T13:43:48.311Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+✘ [ERROR] Could not resolve "./features/home/home.component"
+
+    src/app/app.routes.ts:3:44:
+      3 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/about/about.component"
+
+    src/app/app.routes.ts:4:49:
+      4 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/home/home.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:5:42:
+      5 │ ...t: () => import('./features/home/home.component').then(m => m.Ho...
+        ╵                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/contact/contact.component"
+
+    src/app/app.routes.ts:5:51:
+      5 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/about/about.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:6:47:
+      6 │ ...: () => import('./features/about/about.component').then(m => m.A...
+        ╵                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/contact/contact.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:7:49:
+      7 │ ...() => import('./features/contact/contact.component').then(m => m...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/login/login.component"
+
+    src/app/app.routes.ts:9:57:
+      9 │ ...() => import('./features/auth/login/login.component').then(m => ...
+        ╵                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] Could not resolve "./features/auth/register/register.component"
+
+    src/app/app.routes.ts:10:60:
+      10 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/login/login.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:11:51:
+      11 │ ...) => import('./features/auth/login/login.component').then(m => ...
+         ╵                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+✘ [ERROR] TS2307: Cannot find module './features/auth/register/register.component' or its corresponding type declarations. [plugin angular-compiler]
+
+    src/app/app.routes.ts:12:54:
+      12 │ ...=> import('./features/auth/register/register.component').then(m...
+         ╵              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names                       |  Raw size
+main.js             | main                        |  15.40 kB | 
+chunk-VIRJ3VKV.js   | -                           |   3.02 kB | 
+styles.css          | styles                      |   1.03 kB | 
+chunk-ZDJ3GTZ7.js   | -                           | 187 bytes | 
+polyfills.js        | polyfills                   |  95 bytes | 
+
+                    | Initial total               |  19.74 kB
+
+Lazy chunk files    | Names                       |  Raw size
+chunk-6QENVHOU.js   | -                           |  21.47 kB | 
+chunk-VBEBYQBB.js   | contact-component           |  18.37 kB | 
+chunk-PRZJG3RB.js   | produits-list-component     |  16.07 kB | 
+chunk-QS5BR3FY.js   | about-component             |  15.71 kB | 
+chunk-YZXNUTQB.js   | home-component              |  15.52 kB | 
+chunk-RBMCHOPF.js   | register-component          |  15.49 kB | 
+chunk-TFTKDNQ6.js   | fournisseurs-list-component |  15.32 kB | 
+chunk-HZ34MS43.js   | login-component             |  12.78 kB | 
+chunk-NGNFITJ4.js   | fournisseur-form-component  |  12.74 kB | 
+chunk-W4LO36LC.js   | produit-form-component      |  12.68 kB | 
+chunk-ZHGDPGWQ.js   | dashboard-component         |   8.08 kB | 
+chunk-ZVVRAVV5.js   | -                           |   5.66 kB | 
+chunk-SQPDAG7L.js   | forbidden-component         |   3.76 kB | 
+chunk-OECHO2BG.js   | not-found-component         |   3.75 kB | 
+
+Application bundle generation complete. [0.462 seconds] - 2026-01-05T14:22:37.362Z
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:37:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                    ~~~~
+
+
+▲ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/features/dashboard/dashboard.component.ts:13:43:
+      13 │ ... <h1>Tableau de bord - {{ user?.role?.nom || 'Utilisateur' }}</h1>
+         ╵                                          ~~~
+
+
+Page reload sent to client(s).
